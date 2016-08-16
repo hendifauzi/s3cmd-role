@@ -16,5 +16,6 @@
     s3cmd_version: 1.6.1
     s3cmd_access_key: "TUOWAAA99023990001"
     s3cmd_secret_key: "sd/ceP_vbb#eDDDK"
+    s3cmd_authorized_user: john
   roles:
     - role: s3cmd-role

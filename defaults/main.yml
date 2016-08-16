@@ -1,6 +1,8 @@
 ---
 # defaults file for s3cmd-role
 s3cmd_version: ""
+s3cmd_authorized_group: s3cmd
+s3cmd_authorized_user: ""
 s3cmd_access_key:
 s3cmd_access_token:
 s3cmd_add_encoding_exts:
