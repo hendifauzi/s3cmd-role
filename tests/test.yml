@@ -1,0 +1,20 @@
+---
+- name: Bring up docker containers
+  hosts: localhost
+  gather_facts: false
+  vars:
+    inventory:
+      - name: s3cmd_host_1
+        image: "ubuntu-upstart:14.04"
+  roles:
+    - role: provision_docker
+      provision_docker_inventory: "{{ inventory }}"
+
+- name: Run s3cmd tests
+  hosts: docker_containers
+  vars:
+    s3cmd_version: 1.6.1
+    s3cmd_access_key: "TUOWAAA99023990001"
+    s3cmd_secret_key: "sd/ceP_vbb#eDDDK"
+  roles:
+    - role: s3cmd-role
