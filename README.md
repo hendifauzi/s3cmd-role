@@ -1,7 +1,7 @@
-Role Name
+S3cmd Role
 =========
 
-A brief description of the role goes here.
+Installs and configures s3cmd.
 
 Requirements
 ------------
